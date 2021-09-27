@@ -1,0 +1,41 @@
+Bert:
+
+Classification Report:
+AUROC:  0.9706616610932342
+              precision    recall  f1-score   support
+
+           1     0.9142    0.9728    0.9426       405
+           0     0.9904    0.9685    0.9793      1174
+
+    accuracy                         0.9696      1579
+   macro avg     0.9523    0.9707    0.9610      1579
+weighted avg     0.9709    0.9696    0.9699      1579
+
+Random 5 wrong sentences examples: [(text,other_features,true_label)]
+ [[('Andrew Keith Craddock', [0.0, 0.0, 0.0, -0.331781268119812, -1.089382529258728, -1.031014084815979, -1.1383377313613892], 1.0)],
+ [('Carrying amount', [1.0, 0.0, 0.0, 0.4512971043586731, -1.0393980741500854, -0.35968726873397827, -0.4746514856815338], 0.0)],
+ [('Strategic Report for the year ended 31 December 2016 (continued)', [1.0, 0.0, 0.0, -0.3585990369319916, -0.047484494745731354, -0.8929795026779175, -0.9942114949226379], 1.0),
+ ('(c)', [0.0, 0.0, 0.0, -0.3585990369319916, -1.4422357082366943, -0.6734485030174255, -0.7881008982658386], 0.0),
+ ('Financial Statement Schedule.', [0.0, 0.0, 0.0, 1.144982933998108, -0.817615270614624, 0.8841518759727478, 0.7393350005149841], 0.0)],
+ [('Our acquisitions may expose us to significant unanticipated liabilities and could adversely affect our business, financial condition and results of operations.',
+ [0.0, 1.0, 0.0, -0.4211737811565399, 0.3938596844673157, 0.3090927302837372, 0.17089299857616425], 0.0)],
+ [("Successfully competing in the highly competitive tire industry can be impacted by the successful development of information technology. If the Company fails to successfully develop or implement information technology systems, it may be at a disadvantage to its competitors resulting in lost sales and negative impacts on the Company's earnings.",
+ [0.0, 0.0, 0.0, -0.6786242127418518, 1.3083899021148682, -0.6418686509132385, -0.7246047258377075], 0.0)]]
+
+Bert_Sequence:
+Classification Report:
+AUROC:  0.9711737859381243
+              precision    recall  f1-score   support
+
+           1     0.9289    0.9679    0.9480       405
+           0     0.9888    0.9744    0.9816      1174
+
+    accuracy                         0.9728      1579
+   macro avg     0.9588    0.9712    0.9648      1579
+weighted avg     0.9734    0.9728    0.9729      1579
+Random 5 wrong sentences examples: [(text,other_features,true_label)]
+ [[('Disclosure of Information to Auditors', [1.0, 0.0, 0.0, -0.3585990369319916, -0.8535299897193909, 1.5305203199386597, 1.392438530921936], 0.0)],
+  [('Property and equipment Intangible assets', [0.0, 0.0, 0.0, -0.16372336447238922, -1.158990502357483, 0.4771791100502014, 0.3916178047657013], 0.0)],
+  [('Investigator-assessed', [1.0, 0.0, 0.0, 10.177202224731445, 0.9407265782356262, -0.9001104235649109, -1.0299910306930542], 0.0)],
+  [('dressbarn', [1.0, 1.0, 0.0, -0.4211737811565399, -1.3741087913513184, 0.22555890679359436, 0.08875111490488052], 1.0)],
+  [('-8', [1.0, 0.0, 0.0, -0.6786242127418518, -1.5151760578155518, -1.0203176736831665, -1.145392894744873], 1.0)]]
